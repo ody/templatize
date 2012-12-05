@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'templatize'
+require 'thor/shell/color'
+
+begin
+  Templatize::CLI.start
+rescue Interrupt
+  $stderr.puts "\nAborted!"
+end
